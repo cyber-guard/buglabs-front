@@ -1,0 +1,25 @@
+/* BUTTONS */
+
+.btn {
+	padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    &.btn-white {
+    	background: #fff;
+    	color: #333;
+    }
+
+    &.btn-green {
+    	background: @green;
+    	color: #fff;
+
+    	&:hover {
+			background: saturate(@green, 10%);
+			color: #fff;
+		}
+    }
+}

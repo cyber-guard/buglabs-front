@@ -1,0 +1,21 @@
+/* TESTIMONIALS */
+#testimonials {
+  position: relative;
+  padding: 80px 0;
+}
+#testimonials .preamble {
+  margin-bottom: 80px;
+  text-align: center;
+}
+#testimonials .preamble h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+}
+#testimonials .preamble p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 28px;
+}

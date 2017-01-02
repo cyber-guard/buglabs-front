@@ -1,0 +1,306 @@
+/* HEADER */
+
+#header {
+  position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+	z-index: 99999;
+
+	.logo {
+		padding: 22px 0;
+		margin-right: 40px;
+		display: inline-block;
+		vertical-align: top;
+
+		img {
+			height: 26px;
+		}
+
+		@media (max-width: @screen-md) {
+			margin-right: 20px;
+		}
+	}
+
+	nav {
+		display: inline-block;
+
+		@media (max-width: @screen-xs) {
+			float: right;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			@media (min-width: @screen-sm) {
+				display: block !important;
+			}
+
+			@media (max-width: @screen-sm) {
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 55px;
+		    background: #fff;
+		    padding: 10px 15px 10px 15px;
+				display: none;
+
+				li {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			li {
+				position: relative;
+				margin-right: 30px;
+				display: inline-block;
+
+				@media (max-width: @screen-md) {
+					margin-right: 15px;
+				}
+
+				&.active {
+
+					a {
+						color: @green;
+					}
+				}
+
+				&.login {
+					display: none;
+
+					@media (max-width: @screen-sm) {
+						display: block;
+					}
+				}
+
+				&.signup {
+					display: none;
+
+					@media (max-width: @screen-sm) {
+						display: block;
+					}
+
+					a {
+						padding: 10px 25px;
+						background: @green;
+						color: #fff;
+						border-radius: 25px;
+
+						&:hover {
+							background: saturate(@green, 10%);
+							color: #fff;
+						}
+					}
+				}
+
+				&.has-submenu {
+
+					&:hover {
+
+						ul {
+					    visibility: visible;
+    					opacity: 1;
+						}
+					}
+
+					ul {
+						position: absolute;
+						padding: 10px 0 !important;
+						left: -25px;
+						top: 70px;
+						margin: 0;
+						padding: 0;
+						width: 235px;
+						visibility: hidden;
+    				z-index: 999;
+    				opacity: 0;
+						background: #fff;
+						border-radius: 0;
+						border-top: 4px solid @green;
+						border-bottom-left-radius: 3px;
+						border-bottom-right-radius: 3px;
+						box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+
+						li {
+							width: 100%;
+							display: block;
+
+							&.active {
+
+								a {
+									color: @green;
+								}
+							}
+
+							a {
+								padding: 9px 25px;
+								display: block;
+								width: 100%;
+								text-transform: none;
+						    color: #a6a6a6;
+						    height: auto;
+						    font-size: 13px;
+
+						    &:hover {
+						    	color: @green;
+						    }
+							}
+						}
+					}
+				}
+
+				a {
+					padding: 25px 0;
+					display: inline-block;
+					color: #666;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0.02em;
+
+					@media (max-width: @screen-sm) {
+						padding: 10px 0;
+					}
+
+					&:hover {
+						color: @green;
+					}
+				}
+			}
+		}
+
+		.toggleMenu {
+			margin-top: 16px;
+			width: 40px;
+			height: 40px;
+			display: none;
+			background: transparent;
+			border: 1px solid #e0e0e0;
+			border-radius: 3px;
+			outline: none;
+			.transition(.2s ease-in);
+
+			@media (max-width: @screen-sm) {
+				display: block;
+			}
+
+			@media (max-width: @screen-xs) {
+				float: right;
+			}
+
+			&.active {
+				background: @green;
+				border: 1px solid @green;
+
+				.fa {
+					color: #fff;
+				}
+			}
+
+			&:hover {
+				background: @green;
+				border: 1px solid @green;
+
+				.fa {
+					color: #fff;
+				}
+			}
+
+			.fa {
+				color: #666;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.cta {
+		display: inline-block;
+		float: right;
+
+		@media (max-width: @screen-xs) {
+			display: none;
+		}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			li {
+				margin-left: 20px;
+				display: inline-block;
+
+				&.signup {
+
+					a {
+						padding: 10px 25px;
+						background: @green;
+						color: #fff;
+						border-radius: 25px;
+
+						&:hover {
+							background: saturate(@green, 10%);
+							color: #fff;
+						}
+					}
+				}
+
+				a {
+					padding: 25px 0;
+					display: inline-block;
+					color: #666;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0.02em;
+
+					&:hover {
+						color: @green;
+					}
+				}
+			}
+		}
+	}
+}
+
+.subheader {
+	position: relative;
+	padding: 100px 0 120px 0;
+	margin-top: 70px;
+	text-align: center;
+
+	&.subheader-features {
+		background: #333 url(../img/features.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	&.subheader-pricing {
+		background: #333 url(../img/pricing.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 48px;
+		font-weight: 400;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		color: #fff;
+		text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+
+	p {
+		padding: 0 80px;
+		margin-bottom: 0;
+		color: #fff;
+		text-align: center;
+		font-size: 17px;
+		line-height: 26px;
+	}
+}

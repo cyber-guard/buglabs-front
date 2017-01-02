@@ -1,0 +1,155 @@
+/* TOUR */
+
+#tour {
+	position: relative;
+
+	.tour-section {
+		padding: 90px 0;
+		overflow-x: hidden;
+
+		&.special-padding {
+			padding: 85px 0 75px 0;
+		}
+
+		&.tour-gray {
+			border-top: 1px solid #e0e0e0;
+			border-bottom: 1px solid #e0e0e0;
+			background: #f5f5f5;
+		}
+
+		&.pb60 {
+			padding-bottom: 60px;
+		}
+
+		&.pb70 {
+			padding-bottom: 70px;
+		}
+
+		&.pb50 {
+			padding-bottom: 50px;
+		}
+
+		&.tour-center {
+			position: relative;
+			text-align: center;
+
+			img {
+				position: relative;
+				left: inherit;
+				right: inherit;
+				max-width: 100%;
+				height: auto;
+				width: auto;
+				margin: 0 auto;
+			}
+
+			h3 {
+				margin-top: 40px;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.text-right {
+			padding-left: 60px;
+
+			@media (max-width: @screen-md) {
+				padding-left: 15px;
+				margin-top: 20px;
+			}
+		}
+
+		.text-left {
+			padding-right: 60px;
+
+			@media (max-width: @screen-md) {
+				padding-right: 15px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.btn {
+			margin-top: 16px;
+		}
+
+		img {
+			box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+
+			&.no-shadow {
+				box-shadow: none;
+			}
+		}
+
+		.feature {
+
+			p {
+				margin-top: 5px;
+				margin-bottom: 20px;
+			}
+
+			h5 {
+				margin-top: 0;
+				margin-bottom: 0;
+				text-transform: none;
+				color: #666;
+			    font-size: 18px;
+				line-height: 1.6em;
+				font-weight: 400;
+			}
+
+		}
+
+		.col-md-6 {
+
+			@media (max-width: @screen-md) {
+				height: auto !important;
+			}
+		}
+
+		.rate {
+			padding: 0;
+			margin: 0 0 0 0;
+			list-style-type: none;
+
+			li {
+				display: inline-block;
+
+				.fa {
+					color: #F7C017;
+				}
+			}
+		}
+
+		.features-list {
+			padding: 0;
+			margin: 24px 0 0 0;
+			list-style-type: none;
+
+			li {
+				position: relative;
+				margin-bottom: 10px;
+				font-size: 17px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.fa {
+					margin-right: 6px;
+					color: @green;
+				}
+			}
+		}
+
+		blockquote {
+			margin-left: 0;
+			padding-left: 0;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 24px;
+			font-style: italic;
+		}
+	}
+}
