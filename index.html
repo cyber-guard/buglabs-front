@@ -1,289 +1,356 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="google-site-verification" content="93tIoy8K8lY5pe7VJ-sfZuhAwhFWRZ5cD8YzYf72pfk" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Buglabs provides a user-friendly infrastructure monitoring and security testing.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="google-site-verification" content="93tIoy8K8lY5pe7VJ-sfZuhAwhFWRZ5cD8YzYf72pfk" />
 
-  <title>BugLabs.me - Asset discovery, management, and automation for bug bounty hunters</title>
+        <title>Buglabs - Network infrastructure monitoring and security testing platform</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nyroModal.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
-  <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nyroModal.css">
 
-  <!--[if IE 9]>
-    <script src="js/media.match.min.js"></script>
-  <![endif]-->
-</head>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-<body>
-<div id="main-wrapper">
+        <!--[if IE 9]>
+            <script src="js/media.match.min.js"></script>
+        <![endif]-->
+    </head>
 
-  <header id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="logo">
-            <a href="/"><img src="img/logo.png" alt="BugLabs.me logo"></a>
-          </div>
-          <nav>
-            <ul class="navi custom-list">
-              <li class="has-submenu"><a href="#" class="scroll-link" data-id="features">Features</a></li>
-              <li><a href="#" class="scroll-link" data-id="faq">FAQ</a></li>
-              <li><a href="#" class="scroll-link" data-id="pricing">Pricing</a></li>
-              <li><a href="#" class="scroll-link" data-id="cta">Contact</a></li>
-              <li class="login"><a href="https://app.buglabs.me/">Login</a></li>
-              <li class="signup"><a href="https://app.buglabs.me/register">Register</a></li>
-            </ul>
-            <button class="toggleMenu">
-              <i class="fa fa-bars"></i>
-            </button>
-          </nav>
-          <div class="cta">
-            <ul>
-              <li class="login"><a href="https://app.buglabs.me/">Login</a></li>
-              <li class="signup"><a href="https://app.buglabs.me/register">Register</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+    <body>
+        <div id="main-wrapper">
 
-  <div id="banner" class="banner-1">
-    <div id="gradient"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h2>Asset discovery and management for bug bounty hunters.</h2>
-          <p class="lead">Simple way to discover and manage new assets in a bug bounty program, allowing you to invest more time in manual testing!</p>
-          <a href="https://app.buglabs.me/register" class="btn btn-green">Sign Up!</a>
-        </div>
-        <div class="features-bottom">
-          <div class="feature col-md-3">
-            <h4>Simple UI</h4>
-            <p>The platform is aimed at bug bounty hunters, so it has simple UI, rather than flooding the user with options and unnecessary complexity</p>.
-          </div>
-          <div class="feature col-md-3">
-            <h4>Simple setup</h4>
-            <p>You can start monitoring for assets in seconds.</p>
-          </div>
-          <div class="feature col-md-3">
-            <h4>Maximize bounty potential</h4>
-            <p>By using the platform, you can maximize your potential to find valuable and juicy bugs.</p>
-          </div>
-          <div class="feature col-md-3">
-            <h4>Have fun testing</h4>
-            <p>The platform allows you to focus on the fun parts of pen-testing, without missing out on anything. Good luck hunting!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="cta">
-      <div class="container">
-          <div class="row">
-              <div class="banner-form col-md-6 col-md-offset-3">
-                  <h4>Buglabs launched, check it out yourself!</h4>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 preamble">
-          <h3>Features</h3>
-          <p class="lead">Periodically check for new sub-domains, DNS changes, and new servers easily.</p>
-        </div>
-        <div class="col-md-4 feature">
-          <i class="fa fa-line-chart"></i>
-          <h4>Run various tests</h4>
-          <p>You can run various tests against different types of targets (domains, sub-domains, IPs...), in order to monitor target infrastructure more effectively.</p>
-        </div>
-        <div class="col-md-4 feature">
-          <i class="fa fa-cogs"></i>
-          <h4>Currently free</h4>
-          <p>In order to gather feedback, the registrations and usage are completely free at the moment.</p>
-        </div>
-        <div class="col-md-4 feature">
-          <i class="fa fa-code"></i>
-          <h4>Cron functionality</h4>
-          <p>The platform will run every test periodically, so that you discover new assets as soon as they become available.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="faq">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="faq-inner">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 preamble">
-                <h3>FAQ</h3>
-                <p class="lead">If you didn't find an answer here, get in touch via the information below.</p>
-              </div>
-              <div class="col-md-6">
-                <div class="question">
-                  <h5>So how will this actually help me?</h5>
-                  <p>This platform allows you to consistently monitor the changes in infrastructure of your chosen bug bounty programs, so that you can quickly identify and conduct manual testing on those newly discovered targets. It allows you to focus on the important part; the manual part of testing, whilst making sure you don't miss out on any new assets.</p>
-                </div>
-                <div class="question">
-                    <h5>What types of tests are available?</h5>
-                    <p>At the moment there are 3 test that you can periodically run: sub-domain evaluation, DNS monitoring, and ping sweeps. Thus you can hourly check for new sub-domains, DNS changes, and the ping status of servers/ips.</p>
-                </div>
-                <div class="question">
-                  <h5>How frequently can I run each test?</h5>
-                  <p>The shortest frequency is one hour, or subsequently 2, 6, and 12 hours. Presumably I will add more frequent options, the limit of which is mainly dependent on the available infrastructure...</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="question">
-                  <h5>Is this a finished product?</h5>
-                  <p>Definitely not. This version is essentially pre-alpha stage, and the reason for publishing it in current state is in order to get feedback and suggestions for improvements.</p>
-                </div>
-                <div class="question">
-                  <h5>Is the code open-source?</h5>
-                  <p>Not yet, for several reasons; firstly the whole code base is written in Perl 5 (Mojolicious framework in case somebody cared), thus I am somewhat sceptical it would catch on with other developers. However more importantly, the platform currently has quite a lot of external dependencies, which means that it is difficult to package and not very efficient. I might change my mind as the platform evolves.</p>
-                </div>
-                <div class="question">
-                  <h5>How can I send in suggestions/comments/feedback?</h5>
-                  <p>You can use the contact form below or email directly to info[at]buglabs.me</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="pricing">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="pricing-inner">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 preamble">
-                <h3>Pricing</h3>
-                <p class="lead">For the time being, there are no limits imposed on the number of accounts, targets, or actions, which you may run on one account. This may change in the future, especially for some of the more resource-intensive tasks.</p>
-              </div>
-              <div class="col-md-4 col-md-offset-4">
-                <!--price table-->
-                <div class="price-table">
-                  <!--header-->
-                  <div class="header">
-                    <!--package-->
-                    <h4 class="package">Unlimited</h4>
-                    <!--/package-->
-                    <!--price-->
-                    <div class="price">
-                        <span class="amount">Free</span>
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="logo">
+                                <a href="/"><img src="img/logo.png" alt="BugLabs.me logo"></a>
+                            </div>
+                            <nav>
+                                <ul class="navi custom-list">
+                                    <li class="has-submenu"><a href="#" class="scroll-link" data-id="features">Features</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="faq">FAQ</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="pricing">Pricing</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="cta">Contact</a></li>
+                                    <li class="login"><a href="https://app.buglabs.me/">Login</a></li>
+                                    <li class="signup"><a href="https://app.buglabs.me/register">Sign Up</a></li>
+                                </ul>
+                                <button class="toggleMenu">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </nav>
+                            <div class="cta">
+                                <ul>
+                                    <li class="login"><a href="https://app.buglabs.me/">Login</a></li>
+                                    <li class="signup"><a href="https://app.buglabs.me/register">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!--/price-->
-                  </div>
-                  <!--/header-->
-                  <!--items-->
-                  <div class="items">
-                    <ul>
-                      <li> <strong>Unlimited</strong> Targets </li>
-                      <li> <strong>Unlimited</strong> Domains </li>
-                      <li> <strong>Unlimited</strong> IPs </li>
-                      <li> <strong>Unlimited</strong> Tests </li>
-                    </ul>
-                  </div>
-                  <!--/items-->
-                  <!--table button-->
-                  <a href="https://app.buglabs.me/register" class="btn btn-white">
-                    <span>Register</span>
-                  </a>
-                  <!--/table button-->
                 </div>
-                <!--/price table-->
-              </div>
+            </header>
+
+            <div id="banner" class="banner-1">
+                <div id="gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2>Network Infrastructure Monitoring Platform</h2>
+                            <p class="lead">Continuously scan your infrastructure for vulnerable services, information disclosures, and DNS misconfigurations.</p>
+                            <a href="https://app.buglabs.me/register" class="btn btn-green">Sign Up!</a>
+                        </div>
+                        <div class="features-bottom">
+                            <div class="feature col-md-4">
+                                <h4>Continuous Security</h4>
+                                <p>Ensure that the security of your infrastructure is reassessed continuously and periodically without any hassle.</p>
+                            </div>
+                            <div class="feature col-md-4">
+                                <h4>Simple UI</h4>
+                                <p>The interface is built to be user-friendly and efficient. You don't need to be an expert to effectively use the platform.</p>
+                            </div>
+                            <div class="feature col-md-4">
+                                <h4>Easy Setup</h4>
+                                <p>Just identify the targets, and you can start testing and monitoring within minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="cta">
-      <div class="container">
-          <div class="row">
-              <div class="banner-form col-md-6 col-md-offset-3">
-                  <div id="contact_form">
-                      <h4>Contact</h4>
-                      <form action="https://formspree.io/info@buglabs.me" class="form" method="POST">
-                          <input name="name" type="text" placeholder="Name" required="required">
-                          <input name="email_from" type="text" placeholder="Email" required="required">
-                          <input type="hidden" name="_next" value="http://buglabs.me/">
-                          <input type="text" name="_gotcha" style="display:none" />
-                          <textarea name="message" placeholder="Message"></textarea>
-                          <button type="submit" id="contact_button" >Send</button>
-                      </form>
-                  </div>
-              </div>
-              <div id="thank_you" style="display: none" class="col-md-8 col-md-offset-2">
-                  <h3>Your message has been sent!</h3>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="footer-top">
-            <div class="logo">
-              <img src="img/logo.png" alt="BugLabs.me logo" class="img-responsive">
+            <div id="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 preamble">
+                            <h3>Features</h3>
+                        </div>
+                        <div class="col-md-4 feature">
+                            <i class="fa fa-globe"></i>
+                            <h4>Multiple Targets</h4>
+                            <p>Run various tests against different target types - domains, sub-domains, and IPs - to cover every aspect of your infrastructure.</p>
+                        </div>
+                        <div class="col-md-4 feature">
+                            <i class="fa fa-code-fork"></i>
+                            <h4>Test Chaining</h4>
+                            <p>Use Hooks to automatically chain tests, without the need for manual intervention.</p>
+                        </div>
+                        <div class="col-md-4 feature">
+                            <i class="fa fa-repeat"></i>
+                            <h4>Automation</h4>
+                            <p>Set up tests to run periodically, and get immediately notified when issues are detected.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="quick-nav">
-              <li><a href="#" class="scroll-link" data-id="features">Features</a></li>
-              <li><a href="#" class="scroll-link" data-id="faq">FAQ</a></li>
-              <li><a href="#" class="scroll-link" data-id="pricing">Pricing</a></li>
-              <li><a href="#" class="scroll-link" data-id="cta">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-bottom">
-            <div class="copyrights">
-              <p></p>
+
+            <div id="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="faq-inner">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 preamble">
+                                        <h3>FAQ</h3>
+                                        <p class="lead">If you didn't find an answer here, get in touch via the form below.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="question">
+                                            <h5>Is using Buglabs free?</h5>
+                                            <p>Yes, however you are limited by the number of tests that you can add at any given time.</p>
+                                            <p>For more information, you can checkout the <a href="#" class="scroll-link" data-id="pricing">pricing</a>.</p>
+                                        </div>
+                                        <div class="question">
+                                            <h5>What types of tests are available?</h5>
+                                            <p>Currently there are six tests:</p>
+                                            <ul>
+                                                <li>Sub-domain evaluation</li>
+                                                <li>DNS resolve</li>
+                                                <li>Ping sweep</li>
+                                                <li>HTTP/S request</li>
+                                                <li>TCP port scan (Premium only)</li>
+                                                <li>TCP service evaluation (Premium only)</li>
+                                            </ul>
+                                            <p>Additional test, including SSL analysis, and HTTP header evaluation, and Sub-domain takeover detection tests will be added in near future.</p>
+                                        </div>
+                                        <div class="question">
+                                            <h5>How frequently can I run each test?</h5>
+                                            <p>Each test has possible frequencies set based on their resource demands and overall practical necessity. For instance, you can create a test to ping a server on hourly basis, however, a full TCP port scan can be performed only once every 3 days on the same target.</p>
+                                        </div>
+                                        <div class="question">
+                                            <h5>How can I send in suggestions/comments/feedback?</h5>
+                                            <p>You can use the <a href="#" class="scroll-link" data-id="cta">contact form</a> or email directly to info[at]buglabs.me</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="question">
+                                            <h5>Are there any other advantages to purchasing Premium account?</h5>
+                                            <p>Besides the increased number of tests, and additional test types, premium accounts will have priority access to newly implemented features and tests, as they are being rolled out.</p>
+                                        </div>
+                                        <div class="question">
+                                            <h5>What are Test Hooks?</h5>
+                                            <p>Test Hooks is a functionality allowing you to chain multiple tests, based on their results. For example, it is possible to set up a 'TCP port scan' hook for the 'Ping' test. The platform will start monitoring the ping status of a particular server, and once it responds to the ping, the hook is triggered and a TCP port scan is performed.</p>
+                                        </div>
+                                        <div class="question">
+                                            <h5>How can I get notified?</h5>
+                                            <p>Currently you can receive on-platform notifications, daily/weekly email digests, as well as browser push notifications, and DM Slack notifications in a dedicated Slack Team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+            <div id="pricing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pricing-inner">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2 preamble">
+                                        <h3>Pricing</h3>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <!--price table-->
+                                        <div class="price-table">
+                                            <!--header-->
+                                            <div class="header">
+                                                <!--package-->
+                                                <h4 class="package">Free</h4>
+                                                <!--/package-->
+                                                <!--price-->
+                                                <div class="price">
+                                                    <span class="currency">$</span>
+                                                    <span class="amount">0</span>
+                                                    <span class="period">/mo</span>
+                                                </div>
+                                                <!--/price-->
+                                            </div>
+                                            <!--/header-->
+                                            <!--items-->
+                                            <div class="items">
+                                                <ul>
+                                                    <li> <strong>Unlimited</strong> Targets</li> 
+                                                    <li> <strong>500</strong> Reoccuring Tests </li>
+                                                    <li> <strong>500</strong> Single Tests per day</li>
+                                                </ul>
+                                            </div>
+                                            <!--/items-->
+                                            <!--table button-->
+                                            <a href="https://app.buglabs.me/register" class="btn btn-white">
+                                                <span>Sign Up</span>
+                                            </a>
+                                            <!--/table button-->
+                                        </div>
+                                        <!--/price table-->
+                                    </div>
+                                    <div class="col-md-4">
+                                        <!--price table-->
+                                        <div class="price-table">
+                                            <!--header-->
+                                            <div class="header">
+                                                <!--package-->
+                                                <h4 class="package">Premium</h4>
+                                                <!--/package-->
+                                                <!--price-->
+                                                <div class="price">
+                                                    <span class="currency">$</span>
+                                                    <span class="amount">30</span>
+                                                    <span class="period">/mo</span>
+                                                </div>
+                                                <!--/price-->
+                                            </div>
+                                            <!--/header-->
+                                            <!--items-->
+                                            <div class="items">
+                                                <ul>
+                                                    <li> <strong>Additional</strong> Tests</li>
+                                                    <li> <strong>5000</strong> Reoccuring Tests </li>
+                                                    <li> <strong>1000</strong> Single Tests per day</li>
+                                                </ul>
+                                            </div>
+                                            <!--/items-->
+                                            <!--table button-->
+                                            <a href="https://app.buglabs.me/register" class="btn btn-white">
+                                                <span>Sign Up</span>
+                                            </a>
+                                            <!--/table button-->
+                                        </div>
+                                        <!--/price table-->
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="price-table">
+                                            <!--header-->
+                                            <div class="header">
+                                                <!--package-->
+                                                <h4 class="package">Unlimited</h4>
+                                                <!--/package-->
+                                                <!--price-->
+                                                <div class="price">
+                                                    <span class="amount">-</span>
+                                                </div>
+                                                <!--/price-->
+                                            </div>
+                                            <!--/header-->
+                                            <!--items-->
+                                            <div class="items">
+                                                <ul>
+                                                    <li> <strong>Unlimited</strong> Tests </li>
+                                                    <li> <strong>Custom</strong> Test Frequencies </li>
+                                                    <li> <strong>Security</strong> Consultant Available</li>
+                                                </ul>
+                                            </div>
+                                            <!--/items-->
+                                            <!--table button-->
+                                            <a href="mailto:info@buglabs.me?subject=Unlimited Account" class="btn btn-white">
+                                                <span>Request a Quote</span>
+                                            </a>
+                                            <!--/table button-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</div> <!-- end #main-wrapper -->
+            <div id="cta">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-form col-md-6 col-md-offset-3">
+                            <div id="contact_form">
+                                <h4>Contact Form</h4>
+                                <form action="https://formspree.io/info@buglabs.me" class="form" method="POST">
+                                    <input name="name" type="text" placeholder="Name" required="required">
+                                    <input name="email_from" type="text" placeholder="Email" required="required">
+                                    <input type="hidden" name="_next" value="http://buglabs.me/">
+                                    <input type="text" name="_gotcha" style="display:none" />
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <button type="submit" id="contact_button" >Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="thank_you" style="display: none" class="col-md-8 col-md-offset-2">
+                            <h3>Your message has been sent!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<!-- Scripts -->
-<script src="js/jquery-2.1.3.min.js"></script>
-<script src="js/matchHeight.min.js"></script>
-<script src="js/jquery.nyroModal.custom.min.js"></script>
-<script src="js/scripts.js"></script>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-top">
+                                <div class="logo">
+                                    <img src="img/logo.png" alt="BugLabs.me logo" class="img-responsive">
+                                </div>
+                                <ul class="quick-nav">
+                                    <li><a href="#" class="scroll-link" data-id="features">Features</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="faq">FAQ</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="pricing">Pricing</a></li>
+                                    <li><a href="#" class="scroll-link" data-id="cta">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="copyrights">
+                                    <p>CYBER-GUARD ENTERPRISE LTD</p>
+                                    <p>Company No. 08007623, 24 Holborn Viaduct, London EC1A 2BN, UK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-<!-- ga -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        </div> <!-- end #main-wrapper -->
 
-ga('create', 'UA-89568418-1', 'auto');
-ga('send', 'pageview');
+        <!-- Scripts -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/matchHeight.min.js"></script>
+        <script src="js/jquery.nyroModal.custom.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-</script>
+        <!-- ga -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</body>
+            ga('create', 'UA-89568418-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
 </html>
-

@@ -2771,7 +2771,7 @@ p.lead {
   font-size: 17px;
   line-height: 28px;
 }
-a {
+li > a {
   font-family: 'Source Sans Pro', sans-serif;
   color: #888;
 }
